@@ -35,6 +35,6 @@ Nothing in these Terms excludes, restricts, or modifies a right, remedy, warrant
 
 These Terms may be updated when the Plugin changes. Public, non-sensitive questions may be submitted at:
 
-https://github.com/zipon/aws-skill-project/issues
+https://github.com/zipon/init-project-skill/issues
 
 This is a practical publication draft and is not legal advice. The publisher should review it for the countries and regions selected before publication.

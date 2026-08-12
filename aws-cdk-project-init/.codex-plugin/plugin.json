@@ -6,8 +6,8 @@
     "name": "Lars Andersson",
     "url": "https://github.com/zipon"
   },
-  "homepage": "https://github.com/zipon/aws-skill-project/tree/main/aws-cdk-project-init",
-  "repository": "https://github.com/zipon/aws-skill-project",
+  "homepage": "https://github.com/zipon/init-project-skill/tree/main/aws-cdk-project-init",
+  "repository": "https://github.com/zipon/init-project-skill",
   "license": "LicenseRef-Beer-Credit-1.0",
   "keywords": [
     "aws-cdk",
@@ -21,9 +21,9 @@
     "shortDescription": "Create standardized AWS CDK projects.",
     "longDescription": "Create a standardized AWS CDK TypeScript project from Traceability v1.0.4, rename generated files, classes, and tests, install dependencies, and verify the build. Optional guidance explains the GitHub OIDC role required only for automatic deployment through GitHub Actions. Created by Lars Andersson.",
     "developerName": "Lars Andersson",
-    "websiteURL": "https://github.com/zipon/aws-skill-project/tree/main/aws-cdk-project-init",
-    "privacyPolicyURL": "https://github.com/zipon/aws-skill-project/blob/main/aws-cdk-project-init/PRIVACY.md",
-    "termsOfServiceURL": "https://github.com/zipon/aws-skill-project/blob/main/aws-cdk-project-init/TERMS.md",
+    "websiteURL": "https://github.com/zipon/init-project-skill/tree/main/aws-cdk-project-init",
+    "privacyPolicyURL": "https://github.com/zipon/init-project-skill/blob/main/aws-cdk-project-init/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/zipon/init-project-skill/blob/main/aws-cdk-project-init/TERMS.md",
     "category": "Developer Tools",
     "capabilities": [
       "Write"

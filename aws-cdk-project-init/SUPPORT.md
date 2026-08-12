@@ -6,7 +6,7 @@ AWS CDK Project Init is maintained by Lars Andersson on a best-effort basis. The
 
 Use the repository's public issue tracker:
 
-https://github.com/zipon/aws-skill-project/issues
+https://github.com/zipon/init-project-skill/issues
 
 Before opening an issue, include the operating system, Node.js version, npm version, the step that failed, and the complete non-sensitive error message. Never post AWS account IDs, credentials, tokens, repository secrets, private source code, or other sensitive information.
 

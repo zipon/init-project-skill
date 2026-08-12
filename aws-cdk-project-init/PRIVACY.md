@@ -27,4 +27,4 @@ Public support requests submitted through GitHub Issues are visible to the publi
 
 This policy may be updated when the Plugin's behavior or legal requirements change. For non-sensitive questions, use the public support URL:
 
-https://github.com/zipon/aws-skill-project/issues
+https://github.com/zipon/init-project-skill/issues
