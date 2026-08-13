@@ -19,8 +19,11 @@ Restart the ChatGPT desktop app after installation, then start a new task so the
 
 ### Download
 
-- [Download the current repository as a ZIP](https://github.com/zipon/init-project-skill/archive/refs/heads/main.zip)
-- [Browse releases](https://github.com/zipon/init-project-skill/releases)
+- [Download the OpenAI skill bundle (`v1.0.0`)](https://github.com/zipon/init-project-skill/releases/download/v1.0.0/init-aws-cdk-project-skill-1.0.0.zip)
+- [Download the complete plugin (`v1.0.0`)](https://github.com/zipon/init-project-skill/releases/download/v1.0.0/aws-cdk-project-init-plugin-1.0.0.zip)
+- [Download SHA-256 checksums](https://github.com/zipon/init-project-skill/releases/download/v1.0.0/checksums.sha256)
+- [Download the current source as a ZIP](https://github.com/zipon/init-project-skill/archive/refs/heads/main.zip)
+- [Browse all releases](https://github.com/zipon/init-project-skill/releases)
 
 To create the OpenAI submission bundle and the full plugin archive locally, run:
 
@@ -32,6 +35,6 @@ The archives and SHA-256 checksums are written to `dist/`. They are generated ar
 
 ## Publishing
 
-The repository includes the public listing details, starter prompts, reviewer test cases, release notes, privacy policy, terms, support information, and reproducible packaging needed for a skills-only OpenAI plugin submission.
+The repository includes the public listing details, starter prompts, reviewer test cases, release notes, privacy policy, terms, support information, and repeatable packaging needed for a skills-only OpenAI plugin submission.
 
 Publishing to the universal Plugins Directory still requires a verified publisher identity, **Apps Management: Write** access, review, and final publication through the [OpenAI plugin submission portal](https://platform.openai.com/plugins).
