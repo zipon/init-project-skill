@@ -20,6 +20,19 @@ Created and published by Lars Andersson. The Traceability starter project is als
 - Node.js with npm and npx
 - Public access to GitHub and the npm registry
 
+## Install from GitHub
+
+Add the public repository as a Codex marketplace, then install the plugin:
+
+```bash
+codex plugin marketplace add zipon/init-project-skill --ref main
+codex plugin add aws-cdk-project-init@init-project-skill
+```
+
+Restart the ChatGPT desktop app after installation and begin a new task so the installed skill is discovered.
+
+You can also [download the repository as a ZIP](https://github.com/zipon/init-project-skill/archive/refs/heads/main.zip). Release-ready skill and plugin archives are produced by the repository's `scripts/package.sh` command and by its GitHub validation workflow.
+
 ## Example prompts
 
 - `Create an AWS CDK project named MyProject.`
@@ -44,5 +57,7 @@ The account ID in the example is intentionally redacted. Do not copy example val
 - [Privacy Policy](PRIVACY.md)
 - [Terms of Use](TERMS.md)
 - [License](LICENSE)
+
+The publication materials used for OpenAI review are kept under [`submission/`](submission/).
 
 Read more about the Traceability starter project: [Where the hell is the git project that owns this?](https://lars-andersson.medium.com/where-the-hell-is-the-git-project-that-owns-this-550bd96dd230)
