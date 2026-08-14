@@ -1,6 +1,6 @@
 {
   "name": "aws-cdk-project-init",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create standardized AWS CDK TypeScript projects from the Traceability starter template",
   "author": {
     "name": "Lars Andersson",
@@ -33,7 +33,7 @@
       "Initialize OrderService from the Traceability starter.",
       "Create a CDK project and explain optional GitHub Actions OIDC setup."
     ],
-    "brandColor": "#00CDEB",
+    "brandColor": "#0097B2",
     "composerIcon": "./assets/composer-icon.png",
     "logo": "./assets/logo.png"
   }

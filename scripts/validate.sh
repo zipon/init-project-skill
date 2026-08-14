@@ -52,7 +52,7 @@ for script in "$skill_root/scripts/init_aws_cdk_project.sh" "$skill_root/scripts
   fi
 done
 
-python3 - "$plugin_root/.codex-plugin/plugin.json" "$repo_root/.agents/plugins/marketplace.json" "$skill_root/SKILL.md" <<'PY'
+python3 - "$plugin_root/.codex-plugin/plugin.json" "$repo_root/.agents/plugins/marketplace.json" "$skill_root/SKILL.md" "$skill_root/agents/openai.yaml" <<'PY'
 import json
 import re
 import sys
@@ -61,6 +61,7 @@ from pathlib import Path
 manifest_path = Path(sys.argv[1])
 marketplace_path = Path(sys.argv[2])
 skill_path = Path(sys.argv[3])
+agent_config_path = Path(sys.argv[4])
 plugin_root = manifest_path.parent.parent
 
 manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
@@ -68,6 +69,31 @@ assert manifest["name"] == "aws-cdk-project-init"
 assert re.fullmatch(r"\d+\.\d+\.\d+", manifest["version"])
 assert manifest["skills"] == "./skills/"
 assert manifest["repository"] == "https://github.com/zipon/init-project-skill"
+
+brand_color = manifest["interface"]["brandColor"]
+assert re.fullmatch(r"#[0-9A-Fa-f]{6}", brand_color), "brandColor must be a six-digit hex color"
+
+def linear_channel(value):
+    channel = value / 255
+    return channel / 12.92 if channel <= 0.04045 else ((channel + 0.055) / 1.055) ** 2.4
+
+red, green, blue = (int(brand_color[index:index + 2], 16) for index in (1, 3, 5))
+luminance = (
+    0.2126 * linear_channel(red)
+    + 0.7152 * linear_channel(green)
+    + 0.0722 * linear_channel(blue)
+)
+contrast_against_white = 1.05 / (luminance + 0.05)
+assert contrast_against_white >= 2, (
+    f"brandColor {brand_color} has only {contrast_against_white:.2f}:1 contrast against white"
+)
+
+agent_config = agent_config_path.read_text(encoding="utf-8")
+agent_brand_match = re.search(r'^\s*brand_color:\s*["\']?(#[0-9A-Fa-f]{6})["\']?\s*$', agent_config, re.MULTILINE)
+assert agent_brand_match, "agents/openai.yaml must define brand_color"
+assert agent_brand_match.group(1).lower() == brand_color.lower(), (
+    "plugin manifest brandColor and agents/openai.yaml brand_color must match"
+)
 
 for field in ("composerIcon", "logo"):
     asset = manifest["interface"][field]

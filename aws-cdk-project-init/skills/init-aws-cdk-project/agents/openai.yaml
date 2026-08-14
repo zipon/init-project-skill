@@ -3,5 +3,5 @@ interface:
   short_description: "Create standardized AWS CDK projects"
   icon_small: "./assets/aws-cdk-project-init-logo.png"
   icon_large: "./assets/aws-cdk-project-init-logo.png"
-  brand_color: "#00CDEB"
+  brand_color: "#0097B2"
   default_prompt: "Use $init-aws-cdk-project to create an AWS CDK project named MyProject in the current workspace."

@@ -21,7 +21,7 @@
 - [ ] Confirm **Apps Management: Write** access in that organization.
 - [ ] Open <https://platform.openai.com/plugins> and create a **Skills only** submission.
 - [ ] Confirm that **AWS CDK Project Init** is accepted as the public plugin name.
-- [ ] Download and upload [`init-aws-cdk-project-skill-1.0.0.zip`](https://github.com/zipon/init-project-skill/releases/download/v1.0.0/init-aws-cdk-project-skill-1.0.0.zip).
+- [ ] Run `./scripts/package.sh` and upload `dist/aws-cdk-project-init-plugin-1.0.1.zip`.
 - [ ] Enter the information from `LISTING.md` and upload `assets/logo.png`.
 - [ ] Enter the prompts from `STARTER_PROMPTS.md`.
 - [ ] Enter the five positive and three negative cases from `TEST_CASES.md`.

@@ -1,7 +1,8 @@
-# Release notes — 1.0.0
+# Release notes — 1.0.1
 
 Initial public-submission candidate for AWS CDK Project Init, a skills-only plugin published personally by Lars Andersson.
 
+- Changes the cyan brand color to `#0097B2`, providing 3.46:1 contrast against white and satisfying the plugin submission requirement.
 - Creates standardized AWS CDK TypeScript projects from Traceability `v1.0.4`.
 - Renames generated files, classes, tests, package identity, and stack identifiers.
 - Installs dependencies and verifies the TypeScript build and Jest tests.
